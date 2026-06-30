@@ -1,0 +1,11 @@
+name: 'observability'
+version: '1.0.0'
+profile: 'observability'
+model-paths: ["models"]
+target-path: "target"
+models:
+  observability:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
